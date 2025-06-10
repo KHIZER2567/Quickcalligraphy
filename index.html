@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Home</title>
+    <link rel="icon" href="https://quickie-calligraphy.netlify.app/Images/Logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Playfair Display (Serif for headings) and Inter (Sans-serif for body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Animate.css for entrance animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+  <body class="home-page"></body>
+    <!-- Stylish Welcome Pop-up Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content animate__animated animate__zoomIn">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row g-0">
+                        <div class="col-md-6 d-none d-md-block">
+                            <img src="https://images.unsplash.com/photo-1549492160-b6f4e138a065?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBjYWxsaWdyYXBoeXxlbnwwfHx8fDE3MTc1Mzg5NTl8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                                 alt="Calligraphy Art Welcome" class="img-fluid h-100 rounded-start object-cover">
+                        </div>
+                        <div class="col-md-6 p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3 class="modal-title mb-3" id="welcomeModalLabel">Welcome to Calligraphy Realm!</h3>
+                            <p class="lead text-muted mb-4">Discover the timeless elegance of handwritten art.</p>
+                            <button type="button" class="btn btn-lg btn-primary shadow-lg animate__animated animate__pulse animate__infinite" data-bs-dismiss="modal">
+                                Explore Our Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">
+                <i class="fas fa-feather-alt me-2"></i>Calligraphy Realm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">FAQ</a></li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light mx-2 animate__animated animate__fadeInRight" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary animate__animated animate__fadeInRight animate__delay-1s" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Animated Description -->
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="container position-relative z-1 animate__animated animate__fadeInDown">
+            <h1 class="display-2 mb-4 animate__animated animate__bounceIn">Art in Every Stroke</h1>
+            <p class="lead fs-4 mb-5" id="animated-description"></p>
+            <a href="categories.html" class="btn btn-lg btn-light-outline animate__animated animate__zoomIn animate__delay-2s">
+                Discover Styles <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Categories Section (Updated for more visual appeal) -->
+    <section class="container my-5 py-5">
+        <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Exquisite Calligraphy Categories</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Category Card 1: Arabic Calligraphy -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-3 category-card animate__animated animate__fadeInUp">
+                    <img src="https://images.unsplash.com/photo-1549492160-b6f4e138a065?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHNlYXJjaHwxfHxhcmFiaWMlMjBjYWxsaWdyYXBoeXxlbnwwfHx8fDE3MTc1Mzg5NTl8MA&ixlib=rb-4.0.3&q=80&w=400"
+                         class="card-img-top rounded-top" alt="Arabic Calligraphy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x250/5D4037/FFFFFF?text=Arabic+Calligraphy';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary">Arabic Calligraphy</h5>
+                        <p class="card-text flex-grow-1">Discover the flowing beauty and spiritual depth of traditional Arabic scripts like Thuluth and Naskh.</p>
+                        <a href="categories.html#arabic" class="btn btn-sm btn-outline-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 2: Western Calligraphy -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-3 category-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="https://images.unsplash.com/photo-1579783901968-d069b2512f45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHx3ZXN0ZXJuJTIwY2FsbGlncmFwaHl8ZW58MHx8fHwxNzE3NTM5MDA4fDA&ixlib=rb-4.0.3&q=80&w=400"
+                         class="card-img-top rounded-top" alt="Western Calligraphy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x250/A1887F/FFFFFF?text=Western+Calligraphy';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary">Western Calligraphy</h5>
+                        <p class="card-text flex-grow-1">Explore elegant styles such as Copperplate, Spencerian, and Gothic, embodying classical European artistry.</p>
+                        <a href="categories.html#western" class="btn btn-sm btn-outline-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Category Card 3: Greek Calligraphy -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-3 category-card animate__animated animate__fadeInUp animate__delay-2s">
+                    <img src="https://images.unsplash.com/photo-1620892015093-4e4c9f1a233b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHxncmlnaCUyMGNhbGxpZ3JhcGh5fGVufDB8fHx8MTcxNzUzOTMyMHww&ixlib=rb-4.0.3&q=80&w=400"
+                         class="card-img-top rounded-top" alt="Greek Calligraphy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x250/795548/FFFFFF?text=Greek+Calligraphy';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary">Greek Calligraphy</h5>
+                        <p class="card-text flex-grow-1">Delve into the historical and enduring grace of ancient Greek letterforms and their evolution.</p>
+                        <a href="categories.html#greek" class="btn btn-sm btn-outline-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Category Card 4: Indic Calligraphy -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-3 category-card animate__animated animate__fadeInUp animate__delay-3s">
+                    <img src="https://images.unsplash.com/photo-1616016140880-32111c1dd86d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHhpbmRpYyUyMGNhbGxpZ3JhcGh5fGVufDB8fHx8MTcxNzUzOTM4N3ww&ixlib=rb-4.0.3&q=80&w=400"
+                         class="card-img-top rounded-top" alt="Indic Calligraphy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x250/BCAAA4/FFFFFF?text=Indic+Calligraphy';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary">Indic Calligraphy</h5>
+                        <p class="card-text flex-grow-1">Discover the intricate and diverse scripts originating from the Indian subcontinent, rich in cultural heritage.</p>
+                        <a href="categories.html#indic" class="btn btn-sm btn-outline-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Category Card 5: Modern Calligraphy -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-3 category-card animate__animated animate__fadeInUp animate__delay-4s">
+                    <img src="https://images.unsplash.com/photo-1544607755-e7a935579f4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHxtb2Rlcm4lMjBjYWxsaWdyYXBoeXxlbnwwfHx8fDE3MTc1Mzk0NDd8MA&ixlib=rb-4.0.3&q=80&w=400"
+                         class="card-img-top rounded-top" alt="Modern Calligraphy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x250/C8A970/FFFFFF?text=Modern+Calligraphy';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary">Modern Calligraphy</h5>
+                        <p class="card-text flex-grow-1">Experience the playful and expressive freedom of contemporary brush lettering and hand-lettering styles.</p>
+                        <a href="categories.html#modern" class="btn btn-sm btn-outline-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Category Card 6: Abstract Calligraphy -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 rounded-3 category-card animate__animated animate__fadeInUp animate__delay-5s">
+                    <img src="https://images.unsplash.com/photo-1634509539366-a3203f56d953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY5MzZ8MHwxfHxhYnN0cmFjdCUyMGNhbGxpZ3JhcGh5fGVufDB8fHx8MTcxNzUzOTUwN3ww&ixlib=rb-4.0.3&q=80&w=400"
+                         class="card-img-top rounded-top" alt="Abstract Calligraphy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x250/D2B48C/FFFFFF?text=Abstract+Calligraphy';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary">Abstract Calligraphy</h5>
+                        <p class="card-text flex-grow-1">Artistic interpretations that transcend legibility, focusing on form, texture, and emotional expression.</p>
+                        <a href="categories.html#abstract" class="btn btn-sm btn-outline-secondary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Calligraphy Realm. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/{your_whatsapp_number}" target="_blank" class="text-white mx-2 animate__animated animate__tada animate__infinite social-icon-hover" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+                <a href="#" target="_blank" class="text-white mx-2 social-icon-hover" title="Follow us on Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-white mx-2 social-icon-hover" title="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-white mx-2 social-icon-hover" title="Follow us on Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

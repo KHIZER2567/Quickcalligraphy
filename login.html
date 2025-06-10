@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Playfair Display (Serif for headings) and Inter (Sans-serif for body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Animate.css for entrance animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">
+                <i class="fas fa-feather-alt me-2"></i>Quick Calligraphy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light mx-2 active" aria-current="page" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary animate__animated animate__fadeInRight animate__delay-1s" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="container text-center my-5 py-3">
+        <h1 class="display-4 animate__animated animate__fadeInDown">Login to Your Quick Calligraphy Account</h1>
+        <p class="lead animate__animated animate__fadeInUp">Access exclusive content and personalized features.</p>
+    </header>
+
+    <!-- Login Form Section -->
+    <section class="container my-5 py-5 login-signup-section-animate">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="card shadow-lg border-0 rounded-3 p-4 p-md-5">
+                    <h3 class="card-title text-primary mb-4 text-center">Welcome Back!</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control rounded-pill" id="loginEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control rounded-pill" id="loginPassword" placeholder="Enter your password" required>
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow">Login <i class="fas fa-sign-in-alt ms-2"></i></button>
+                        </div>
+                        <div class="text-center mb-4">
+                            <a href="#" class="text-decoration-none text-secondary">Forgot Password?</a>
+                        </div>
+                        <hr class="my-4">
+                        <p class="text-center text-muted mb-3">Or login with:</p>
+                        <div class="d-flex justify-content-center social-login-icons">
+                            <a href="#" class="btn btn-outline-secondary mx-2 social-icon-circle-hover" title="Login with Google">
+                                <i class="fab fa-google fa-2x"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary mx-2 social-icon-circle-hover" title="Login with Facebook">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-secondary mx-2 social-icon-circle-hover" title="Login with LinkedIn">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                        </div>
+                        <p class="text-center mt-4 mb-0 text-muted">Don't have an account? <a href="signup.html" class="text-primary text-decoration-none fw-bold">Sign Up Here</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Quick Calligraphy. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/{your_whatsapp_number}" target="_blank" class="text-white mx-2 animate__animated animate__tada animate__infinite social-icon-hover" title="Chat on WhatsApp">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+                <a href="#" target="_blank" class="text-white mx-2 social-icon-hover" title="Follow us on Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-white mx-2 social-icon-hover" title="Follow us on Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" target="_blank" class="text-white mx-2 social-icon-hover" title="Follow us on Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
